@@ -8,6 +8,7 @@ package DiscoteraDiscos;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  *
@@ -18,7 +19,7 @@ public class ListaCantantesFamosos {
   ArrayList<CantanteFamoso> cantantes;
 
     public ListaCantantesFamosos() {
-        cantantes = new <CantanteFamoso> ArrayList();
+        cantantes = new ArrayList<CantanteFamoso>();
     }
 
     public void AgregarCantanteFamoso(CantanteFamoso Cantante) {
@@ -30,8 +31,11 @@ public class ListaCantantesFamosos {
         Iterator<CantanteFamoso> continuar = cantantes.iterator();
         while (continuar.hasNext()) {
             cantante = continuar.next();
-            System.out.print("Cantante: " + cantante.getNombre()+ "Discos con mas Popular: " + cantante.getDiscoConMasVentas());
+            System.out.println(" Cantante: " +  cantante.getNombre()+ "\n Albun mas Vendido: " + cantante.getDiscoConMasVentas());
+            System.out.println(" ");
         }
     }
-
+    
+    
+   
 }
